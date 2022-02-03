@@ -1,18 +1,18 @@
 import React from "react";
 
-function EyesOnMe({focus}){
+function EyesOnMe({}){
     return(
-        <button focus={focus}>Eyes on me</button>
+        <button onBlur={blur} onFocus={focus} >Eyes on me</button>
     )
 }
 
 
-function focus(e){
-    if(e === onblur){
-        console.log("Hey! Eyes on me!")
-    }else{
-        console.log("Good!")
-    }
+function blur(){
+    console.log("Hey! Eyes on me!")
+}
+
+function focus(){
+    console.log("Good!")
 }
 
 export default EyesOnMe
